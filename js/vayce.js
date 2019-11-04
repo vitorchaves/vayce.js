@@ -21,7 +21,7 @@
     var $menu = this;
 
     return $menu.each(function(settings){
-      $menu.attr('style', "position: relative; width: fit-content; width: -moz-fit-content;").find("nav").attr('style', "background-color:" + defaults.bgColor + "; width: fit-content; width: -moz-fit-content; position: absolute; margin-top: "+defaults.topSpace+"; right: 0; top: 0; borderRadius: " + defaults.borderRadius}).hide().find('ul').attr('style', "list-style: none;  max-width: 250px; width: max-content; width: -moz-max-content").find('li').css({
+      $menu.attr('style', "position: relative; width: fit-content; width: -moz-fit-content;").find("nav").attr('style', "background-color:" + defaults.bgColor + "; width: fit-content; width: -moz-fit-content; position: absolute; margin-top: "+defaults.topSpace+"; right: 0; top: 0; border-radius: " + defaults.borderRadius + ";").hide().find('ul').attr('style', "list-style: none;  max-width: 250px; width: max-content; width: -moz-max-content").find('li').css({
         padding: defaults.itemsPadding,
         color: defaults.fgColor,
         cursor: 'pointer'
