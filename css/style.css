@@ -114,3 +114,21 @@ main{
   margin: 20px;
   margin-top: 0;
 }
+
+@media screen and (max-width: 952px){
+  .examples-menus menu{
+    margin-left: 80px
+  }
+}
+
+@media screen and (max-width: 592px){
+  .examples-menus menu{
+    margin-left: 40px
+  }
+}
+
+@media screen and (max-width: 374px){
+  .examples-menus menu{
+    margin-left: 25px
+  }
+}
