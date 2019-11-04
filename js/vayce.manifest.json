@@ -1,0 +1,36 @@
+{
+	"name": "Vayce",
+	"title": "Vayce",
+	"description": "Vayce its a simples plugin to create responsive menus.",
+	"keywords": [
+		"responsive",
+		"menu",
+		"vayce",
+		"create menu"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Vítor Chaves",
+		"url": "https://github.com/vitorchaves"
+	},
+	"maintainers": [
+		{
+			"name": "Vítor Chaves",
+			"email": "vitor.chaves@moudigi.com",
+			"url": "https://github.com/vitorchaves"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": ""
+		}
+	],
+	"bugs": "https://github.com/vitorchaves/vayce",
+	"homepage": "https://github.com/vitorchaves/vayce",
+	"docs": "https://github.com/vitorchaves/vayce",
+	"download": "https://github.com/vitorchaves/vayce",
+	"dependencies": {
+		"jquery": ">=3.4.1"
+	}
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vayce Plugin - Beautiful Responsive Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap" rel="stylesheet">
+  <link href="css/prism.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img id="logo" src="vayce-comming.gif" width="200" draggable="false" alt="Vayce" title="Vayce">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#docs">Docs</a></li>
+        <li><a href="#author">Author</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="text-content container section-margin">
+      <h1>About Vayce.js</h1>
+      <p>Vayce.js is designed to make it easy to develop responsive menus on web pages, so you can save time and focus on what really matters!</p>
+
+      <p>Below you can check some examples of your application.</p>
+    </section>
+
+    <section id="examples" class="text-content container section-margin">
+      <h2>Some usage Examples</h2>
+      <div class="examples-menus">
+        <menu class="ex-1">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="home.png">Home</a></li>
+              <li><a href="#"><img src="about.png">About</a></li>
+              <li class="sub-me"><img src="goals.png">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="cases.png">Cases</a></li>
+              <li><a href="#"><img src="contact.png">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+        <menu class="ex-2">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="sub-me">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cases</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+        <menu class="ex-3">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="home.png">Home</a></li>
+              <li><a href="#"><img src="about.png">About</a></li>
+              <li class="sub-me"><img src="goals.png">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="cases.png">Cases</a></li>
+              <li><a href="#"><img src="contact.png">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+        <menu class="ex-4">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="sub-me">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cases</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+        <menu class="ex-5">
+          <nav>
+            <ul>
+              <li><a href="#"><img src="home.png">Home</a></li>
+              <li><a href="#"><img src="about.png">About</a></li>
+              <li class="sub-me"><img src="goals.png">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="cases.png">Cases</a></li>
+              <li><a href="#"><img src="contact.png">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+        <menu class="ex-6">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="sub-me">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cases</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+
+      </div>
+
+      <br><br>
+      <h4>What are you waiting for!?</h4>
+      <p>Create a beautiful responsive menu for your project! See how simple it is. Check out our documentation below.</p>
+    </section>
+
+
+    <section id="docs" class="text-content container section-margin">
+      <h2>About Vayce.js</h2>
+      <p>All you need to do is create a simple markup structure for your menu as per the example below.</p>
+
+      <br>
+
+      <pre>
+        <code class="language-html">
+          &lt;menu id="my-menu"&gt;
+            &lt;nav&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="home.png"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="about.png"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="sub-me"&gt;&lt;img src="goals.png"&gt;Our Goals
+                  &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Mission&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Vision&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Values&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="cases.png"&gt;Cases&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="contact.png"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          &lt;/menu&gt;
+        </code>
+      </pre>
+      <br>
+      <p>We <strong>strongly recommend</strong> that you use an ID or class to avoid conflict with other elements in your project.</p>
+
+      <p>After making your markup structure it's time to start Vayce. You simply need to reference the menu you want to make responsive and call Vayce. He will do the heavy lifting!</p>
+      <br>
+      <p><span class="dtq">!</span> Note that to create submenus just put the class 'sub-me' in the LI you want to make parent of the submenu.</p>
+
+      <br>
+
+      <pre>
+        <code class="language-js">
+          $('.ex-1').vayce();
+        </code>
+      </pre>
+
+      <p>Voilá! Vayce acaba de criar um novo menu responsivo para você! Você pode conferir como customizá-lo e deixá-lo com sua cara logo abaixo.</p>
+
+      <br>
+
+      <h2>Settings</h2>
+
+      <p>Check out the list of options you can use on your Vayce:</p>
+
+      <br><br>
+
+      <pre>
+        <code class="lang-js">
+          $('.ex-1').vayce({
+            bgColor: "#34495e", // Change the background color of the menu
+            fgColor: "#eee", // Change the foreground color (li color) of the menu
+            alignment: 'right', // Change the position of the menu
+            useDivider: true, // Boolean - Use borders to divide the items or no
+            dividerColor: "#546f8a", // Change the divider color
+            useImages: true, // Boolean - To allow or disallow image use
+            imageWidth: '15px', // Change the image width
+            menuColor: "gray", // Change the menu icon color
+            menuActive: "#e67e22", // Change the menu icon active color
+            topSpace: '40px', // Control the distance the menu should appear in relation the menu icon
+            itemsPadding: '9px 25px', // Control the padding into the LI items
+            controller: '▼', // Change the icon (Use '' to use nothing :P)
+            borderRadius: '5px' // The radius of content menu border
+          });
+        </code>
+      </pre>
+
+      <br> <br>
+
+      <p><span class="dtq">!</span> If you use nothing, this settings will be the default settings.</p>
+
+
+    </section>
+
+    <section id="author" class="text-content container section-margin">
+
+
+      <img class="author-photo" src="chaves.jpg" draggable="false">
+
+      <h2>About Vítor Chaves</h2>
+
+      <p>Vítor Chaves is a front and back end developer, Brazilian.</p>
+
+      <p>Born in Rio de Janeiro, currently discovering the city of São Paulo for work. He spends some of his free time creating simple solutions for the developer community.</p>
+
+      <p>If you would like to tell me something, please contact me via email: vhxchaves@gmail.com. It will be a pleasure talking to you!</p>
+
+    </section>
+
+
+  </main>
+
+  <!-- <pre>
+  <code class="language-js">
+</code>
+</pre> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/vayce.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.ex-1').vayce({alignment: 'left'});
+    $('.ex-2').vayce({
+      bgColor: "#d35400",
+      fgColor: "white",
+      alignment: 'left',
+      useDivider: true,
+      dividerColor: "#e67e22",
+      useImages: false,
+      imageWidth: '15px',
+      menuColor: "#d35400",
+      menuActive: "#d35400",
+      topSpace: '40px',
+      itemsPadding: '7px 12px',
+      controller: '•',
+      borderRadius: '2px'
+    });
+    $('.ex-3').vayce({
+      bgColor: "#8e44ad",
+      fgColor: "white",
+      alignment: 'left',
+      useDivider: false,
+      dividerColor: "#9b59b6",
+      useImages: true,
+      imageWidth: '15px',
+      menuColor: "#8e44ad",
+      menuActive: "#9b59b6",
+      topSpace: '40px',
+      itemsPadding: '7px 12px',
+      controller: '▼',
+      borderRadius: '2px'
+    });
+    $('.ex-4').vayce({
+      bgColor: "#f1c40f",
+      fgColor: "#2c3e50",
+      alignment: 'left',
+      useDivider: false,
+      dividerColor: "#c0392b",
+      useImages: false,
+      imageWidth: '15px',
+      menuColor: "#f1c40f",
+      menuActive: "#f39c12",
+      topSpace: '40px',
+      itemsPadding: '13px 35px',
+      controller: '-',
+      borderRadius: '30px'
+    });
+    $('.ex-5').vayce({
+      bgColor: "#e74c3c",
+      fgColor: "#ecf0f1",
+      alignment: 'left',
+      useDivider: true,
+      dividerColor: "#c0392b",
+      useImages: true,
+      imageWidth: '15px',
+      menuColor: "#e74c3c",
+      menuActive: "#c0392b",
+      topSpace: '40px',
+      itemsPadding: '9px 25px',
+      controller: '♥',
+      borderRadius: '0'
+    });
+    $('.ex-6').vayce({
+      bgColor: "#ecf0f1",
+      fgColor: "#2c3e50",
+      alignment: 'left',
+      useDivider: false,
+      dividerColor: "#546f8a",
+      useImages: false,
+      menuColor: "#2ecc71",
+      menuActive: "#27ae60",
+      topSpace: '40px',
+      itemsPadding: '9px 25px',
+      controller: '↓',
+      borderRadius: '20px'
+    });
+  });
+</script>
+</body>
+</html>
