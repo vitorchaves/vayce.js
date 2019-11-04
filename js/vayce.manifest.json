@@ -5,13 +5,13 @@
 	"keywords": [
 		"responsive",
 		"menu",
-		"vayce",
+		"vayce.js",
 		"create menu"
 	],
 	"version": "1.0.0",
 	"author": {
 		"name": "Vítor Chaves",
-		"url": "https://github.com/vitorchaves"
+		"url": "https://github.com/vitorchaves/vayce.js"
 	},
 	"maintainers": [
 		{
@@ -26,10 +26,10 @@
 			"url": ""
 		}
 	],
-	"bugs": "https://github.com/vitorchaves/vayce",
-	"homepage": "https://github.com/vitorchaves/vayce",
-	"docs": "https://github.com/vitorchaves/vayce",
-	"download": "https://github.com/vitorchaves/vayce",
+	"bugs": "https://github.com/vitorchaves/vayce.js",
+	"homepage": "https://github.com/vitorchaves/vayce.js",
+	"docs": "https://github.com/vitorchaves/vayce.js",
+	"download": "https://github.com/vitorchaves/vayce.js",
 	"dependencies": {
 		"jquery": ">=3.4.1"
 	}
