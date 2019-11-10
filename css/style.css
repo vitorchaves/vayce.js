@@ -11,7 +11,7 @@ body{
   background: white;
 }
 
-header{
+header#main{
   background: #ecf0f1;
   position: fixed;
   top: 0;
@@ -21,12 +21,12 @@ header{
   width: 100%;
 }
 
-header ul{
+header#main ul{
   display: inline-flex;
   list-style: none;
 }
 
-header ul li{
+header#main ul li{
   margin: 0 5px;
   padding: 0 5px;
   text-transform: uppercase;
@@ -34,11 +34,11 @@ header ul li{
   color: #2980b9
 }
 
-header ul li:hover{
+header#main ul li:hover{
   opacity: .8;
 }
 
-header ul li a{
+header#main ul li a{
   color: inherit;
   font-family: inherit;
   text-decoration: none;
@@ -106,6 +106,10 @@ main{
 
 .examples-menus menu:first-child{
   margin-left: 0;
+}
+
+.example-full{
+  position: relative;
 }
 
 .author-photo{
