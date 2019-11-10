@@ -11,9 +11,9 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
+  <header id="main">
     <div class="container">
-      <img id="logo" src="vayce-comming.gif" width="200" draggable="false" alt="Vayce" title="Vayce">
+      <img id="logo" src="vayce-menu.png" width="200" draggable="false" alt="Vayce" title="Vayce">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#examples">Examples</a></li>
@@ -236,7 +236,7 @@
         </code>
       </pre>
 
-      <p>Voilá! Vayce acaba de criar um novo menu responsivo para você! Você pode conferir como customizá-lo e deixá-lo com sua cara logo abaixo.</p>
+      <p>Voilá! Vayce has just created a new responsive menu for you! You can check how to customize it and leave it with your face below.</p>
 
       <br>
 
@@ -261,7 +261,9 @@
             topSpace: '40px', // Control the distance the menu should appear in relation the menu icon
             itemsPadding: '9px 25px', // Control the padding into the LI items
             controller: '▼', // Change the icon (Use '' to use nothing :P)
-            borderRadius: '5px' // The radius of content menu border
+            borderRadius: '5px', // The radius of content menu border
+            fullMenu: false, // If you want to use a full menu, just put this to TRUE and be sure that your menu is inside a relative parent.
+            menuWidth: "250px" // If diferent of 250px, it will change the menu width, min-width and max-width.
           });
         </code>
       </pre>
@@ -272,6 +274,38 @@
 
 
     </section>
+
+
+
+
+    <section id="author" class="text-content container section-margin">
+
+      <h2>Full Width Menu Working (Look in small screens. This is inside a container.)</h2>
+
+      <p>You can choose your container size using CSS. Vayce will respect it.</p>
+
+      <header class="example-full">
+        <menu class="fwm">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="sub-me">Our Goals
+                <ul>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Values</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cases</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </menu>
+      </header>
+
+    </section>
+
 
     <section id="author" class="text-content container section-margin">
 
@@ -315,7 +349,8 @@
       topSpace: '40px',
       itemsPadding: '7px 12px',
       controller: '•',
-      borderRadius: '2px'
+      borderRadius: '2px',
+      menuWidth: "400px"
     });
     $('.ex-3').vayce({
       bgColor: "#8e44ad",
@@ -375,6 +410,22 @@
       itemsPadding: '9px 25px',
       controller: '↓',
       borderRadius: '20px'
+    });
+
+    $('.fwm').vayce({
+      bgColor: "#5f27cd",
+      fgColor: "#fff",
+      alignment: 'left',
+      useDivider: true,
+      dividerColor: "#341f97",
+      useImages: false,
+      menuColor: "#5f27cd",
+      menuActive: "#341f97",
+      topSpace: '40px',
+      itemsPadding: '9px 20px',
+      controller: '▼',
+      borderRadius: '0',
+      fullMenu: true
     });
   });
 </script>

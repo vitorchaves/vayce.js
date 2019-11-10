@@ -13,7 +13,9 @@
       topSpace: '40px',
       itemsPadding: '9px 25px',
       controller: '▼',
-      borderRadius: '5px'
+      borderRadius: '5px',
+      fullMenu: false,
+      menuWidth: "250px"
     }
 
     var settings = $.extend(defaults, options);
@@ -21,7 +23,20 @@
     var $menu = this;
 
     return $menu.each(function(settings){
-      $menu.attr('style', "position: relative; width: fit-content; width: -moz-fit-content;").find("nav").attr('style', "background-color:" + defaults.bgColor + "; width: fit-content; width: -moz-fit-content; position: absolute; margin-top: "+defaults.topSpace+"; right: 0; top: 0; border-radius: " + defaults.borderRadius + ";").hide().find('ul').attr('style', "list-style: none;  max-width: 250px; width: max-content; width: -moz-max-content").find('li').css({
+
+
+      if(defaults.fullMenu){
+        $menu.attr('style', "width: fit-content; width: -moz-fit-content;").find("nav").attr('style', "background-color:" + defaults.bgColor + "; width: 100%; position: absolute; margin-top: "+defaults.topSpace+"; right: 0; top: 0; border-radius: " + defaults.borderRadius + ";").hide().find('ul').attr('style', "list-style: none;  width: 100%;");
+      } else {
+        $menu.attr('style', "position: relative; width: fit-content; width: -moz-fit-content;").find("nav").attr('style', "background-color:" + defaults.bgColor + "; width: fit-content; width: -moz-fit-content; position: absolute; margin-top: "+defaults.topSpace+"; right: 0; top: 0; border-radius: " + defaults.borderRadius + ";").hide();
+        if(defaults.menuWidth != "250px"){
+          $menu.find('nav').find('ul').attr('style', "list-style: none;  width: "+defaults.menuWidth+";");
+        } else {
+            $menu.find('nav').find('ul').attr('style', "list-style: none;  max-width: 250px; width: max-content; width: -moz-max-content");
+        }
+      }
+
+      $menu.find('nav').find('ul').find('li').css({
         padding: defaults.itemsPadding,
         color: defaults.fgColor,
         cursor: 'pointer'
@@ -73,7 +88,7 @@
       }
 
       if(defaults.useImages){
-        $menu.find('nav > ul > li img').css({
+        $menu.find('nav > ul > li > img, nav > ul > li > a img').css({
           marginRight: '10px',
           width: defaults.imageWidth
         });
