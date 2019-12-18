@@ -15,7 +15,35 @@
       controller: '▼',
       borderRadius: '5px',
       fullMenu: false,
-      menuWidth: "250px"
+      menuWidth: "250px",
+
+      // Forms Funcionaties
+
+      mode: 'menu', // formulary - To initialize Vayce in Formulary mode
+      f_width: "100%", // Formulary width
+      f_in_width: "100%", // Formulary input width
+      f_in_height: "35px", // Formulary input Height
+      f_in_bgColor: "white", // Formulary Input (input (Type text, tel, password, email) and textareas) background color
+      f_in_fgColor: '#555555', // Same as above but to change the foreground color
+      f_in_textarea_width: '100%', // Define the textarea width
+      f_in_textarea_resizable: true, // Resize it?
+      f_in_textarea_max_resizable_height: '160px', // If true, define the max height
+      f_in_textarea_max_resizable_width: '100%', // If true, define the max width
+      f_in_textarea_min_resizable_height: '110px', // If true, define the min height
+      f_in_textarea_min_resizable_width: '100%', // If true, define the min width
+      f_in_transition: false, // Allow or not smooth transitions to colors
+      f_in_transition_time: "0.3s", // Controls the transition time
+      f_in_transition_mode: 'ease', // ease, linear, ease-in, ease-out, ease-in-out ...
+      f_in_focus: true, // Alow or not change when in focus (Recommend to use to make forms more accessible)
+      f_in_focus_mode: "inset-shadow", // shadow (outset, inset), border, backgorund
+      f_in_focus_color: 'rgba(0,0,0,.05'), // Define the color (border, background or the shadow) when in focus
+      f_submit_bgColor: 'green', // Define the color to use in submit button
+      f_submit_fgColor: 'white', // Define the foreground color to use in submit button
+      f_use_label: true, // Do you want?
+      f_label_transition_mode: 'slidingUp', // fadingAway, slidingUp, boring
+      f_label_fgColor: '#555555', // Define the foreground Color of the label
+      f_label_bgColor: 'white' // Define the Background Color of the label 
+
     }
 
     var settings = $.extend(defaults, options);

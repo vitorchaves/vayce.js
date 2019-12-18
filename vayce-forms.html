@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vayce Plugin - Beautiful Responsive Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap" rel="stylesheet">
+  <link href="css/prism.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header id="main">
+    <div class="container">
+      <img id="logo" src="vayce-menu.png" width="200" draggable="false" alt="Vayce" title="Vayce">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#docs">Docs</a></li>
+        <li><a href="#author">Author</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  </main>
+
+  <!-- <pre>
+  <code class="language-js">
+</code>
+</pre> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/vayce.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.fwm').vayce({
+      bgColor: "#5f27cd",
+      fgColor: "#fff",
+      alignment: 'left',
+      useDivider: true,
+      dividerColor: "#341f97",
+      useImages: false,
+      menuColor: "#5f27cd",
+      menuActive: "#341f97",
+      topSpace: '40px',
+      itemsPadding: '9px 20px',
+      controller: '▼',
+      borderRadius: '0',
+      fullMenu: true
+    });
+  });
+</script>
+</body>
+</html>
